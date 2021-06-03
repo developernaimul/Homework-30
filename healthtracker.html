@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html amp>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.8.2, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.8.2, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <meta name="description" content="New AppAMP HTML Template - Download Now">
+    <title>AppAMP Health Tracker App Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="healthtracker.html">
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+
+
+</head>
+
+<body>
+    <div id="top-page"></div>
+    <amp-animation id="showScrollToTopAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "0.4",
+                        "visibility": "visible"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <amp-animation id="hideScrollToTopAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "0",
+                        "visibility": "hidden"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <div id="scrollToTopMarker">
+        <amp-position-observer on="enter:hideScrollToTopAnim.start; exit:showScrollToTopAnim.start" layout="nodisplay"> </amp-position-observer>
+    </div>
+    <amp-sidebar id="sidebar" class="cid-r58bTVmcPn" layout="nodisplay" side="right">
+        <div class="builder-sidebar" id="builder-sidebar">
+            <button on="tap:sidebar.close" class="close-sidebar">
+				<span></span>
+				<span></span>
+			</button>
+
+
+            <!-- NAVBAR ITEMS -->
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                <li class="nav-item">
+                    <a class="nav-link mbr-regular link text-black display-4" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown open">
+                    <a class="nav-link link mbr-regular text-black dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="true">Live Demo</a>
+                    <div class="dropdown-menu">
+                        <a class="text-black mbr-regular dropdown-item display-4" href="timeplanner.html">Time Planner App</a>
+                        <a class="text-black mbr-regular dropdown-item display-4" href="healthtracker.html">Health Tracker App</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link mbr-regular link text-black dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="false">Demo Blocks</a>
+                    <div class="dropdown-menu"><a class="mbr-regular text-black dropdown-item display-4" href="headers.html">Headers</a><a class="mbr-regular text-black dropdown-item display-4" href="features.html" aria-expanded="true">Features</a><a class="mbr-regular text-black dropdown-item display-4"
+                            href="pricing.html" aria-expanded="true">Pricing Table &amp; Article</a><a class="mbr-regular text-black dropdown-item display-4" href="team.html" aria-expanded="true">Team &amp; Testimonials</a><a class="mbr-regular text-black dropdown-item display-4"
+                            href="gallery.html" aria-expanded="false">Galery &amp; Video</a><a class="mbr-regular text-black dropdown-item display-4" href="forms.html" aria-expanded="false">Forms &amp; Maps &amp; Footers</a></div>
+                </li>
+            </ul>
+            <!-- NAVBAR ITEMS END -->
+            <!-- SOCIAL ICON -->
+
+            <!-- SOCIAL ICON END -->
+            <!-- SHOW BUTTON -->
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-md mbr-bold btn-primary-outline display-4" href="http://my.mobirise.com/buy.php?p=51">Buy Now</a></div>
+            <!-- SHOW BUTTON END -->
+        </div>
+    </amp-sidebar>
+
+    <!-- Google Analytics -->
+    <amp-analytics type="googleanalytics" id="analytics1">
+        <script type="application/json">
+            {
+                "vars": {
+                    "account": "UA-63126154-1"
+                },
+                "triggers": {
+                    "trackPageview": {
+                        "on": "visible",
+                        "request": "pageview"
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
+    <!-- /Google Analytics -->
+
+
+    <section class="menu1 menu horizontal-menu cid-r58bTVmcPn" id="menu1-29">
+
+        <!-- <div class="menu-wrapper"> -->
+        <nav class="navbar navbar-dropdown navbar-expand-lg navbar-fixed-top">
+            <div class="menu-container container">
+                <!-- SHOW LOGO -->
+                <div class="navbar-brand">
+                    <div class="navbar-logo">
+                        <amp-img src="assets/images/logo.png" layout="responsive" width="45" height="45" alt="Mobirise" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div>
+                            </div>
+
+                        </amp-img>
+                    </div>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption mbr-semibold text-black display-5" href="index.html">AppAMP Theme</a></span>
+                </div>
+                <!-- SHOW LOGO END -->
+                <!-- COLLAPSED MENU -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- NAVBAR ITEMS -->
+                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                        <li class="nav-item">
+                            <a class="nav-link mbr-regular link text-black display-4" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown open">
+                            <a class="nav-link link mbr-regular text-black dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="true">Live Demo</a>
+                            <div class="dropdown-menu">
+                                <a class="text-black mbr-regular dropdown-item display-4" href="timeplanner.html">Time Planner App</a>
+                                <a class="text-black mbr-regular dropdown-item display-4" href="healthtracker.html">Health Tracker App</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mbr-regular link text-black dropdown-toggle display-4" data-toggle="dropdown-submenu" aria-expanded="false">Demo Blocks</a>
+                            <div class="dropdown-menu"><a class="mbr-regular text-black dropdown-item display-4" href="headers.html">Headers</a><a class="mbr-regular text-black dropdown-item display-4" href="features.html" aria-expanded="true">Features</a><a class="mbr-regular text-black dropdown-item display-4"
+                                    href="pricing.html" aria-expanded="true">Pricing Table &amp; Article</a><a class="mbr-regular text-black dropdown-item display-4" href="team.html" aria-expanded="true">Team &amp; Testimonials</a><a class="mbr-regular text-black dropdown-item display-4"
+                                    href="gallery.html" aria-expanded="false">Galery &amp; Video</a><a class="mbr-regular text-black dropdown-item display-4" href="forms.html" aria-expanded="false">Forms &amp; Maps &amp; Footers</a></div>
+                        </li>
+                    </ul>
+                    <!-- NAVBAR ITEMS END -->
+                    <!-- SOCIAL ICON -->
+
+                    <!-- SOCIAL ICON END -->
+                    <!-- SHOW BUTTON -->
+                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-md mbr-bold btn-primary-outline display-4" href="http://my.mobirise.com/buy.php?p=51">Buy Now</a></div>
+                    <!-- SHOW BUTTON END -->
+                </div>
+                <!-- COLLAPSED MENU END -->
+
+                <button on="tap:sidebar.toggle" class="ampstart-btn hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+            </div>
+        </nav>
+        <!-- AMP plug -->
+
+        <!-- </div> -->
+    </section>
+
+    <section class="header3 cid-r59YPXUpCy" id="header3-2m">
+
+        <!--Block parameters controls (Blue "Gear" panel) -->
+        <div class="mbr-overlay"></div>
+        <div class="container">
+            <div class="mbr-row mbr-jc-c">
+                <div class="title-wrap mbr-col-lg-9 mbr-col-md-12 mbr-col-sm-12 mbr-flex mbr-column mbr-jc-c">
+                    <h3 class="mbr-section-title mbr-fonts-style mbr-light align-center display-5">It is created to watch your health</h3>
+                    <p class="mbr-text mbr-fonts-style mbr-pt-4 align-center mbr-semibold display-2">Health Tracker App</p>
+                </div>
+                <div class="form-wrap mbr-col-lg-7 mbr-col-md-10 mbr-col-sm-12 mbr-flex mbr-column mbr-jc-c" data-form-type="formoid">
+                    <div class="form-block" data-form-type="formoid">
+                        <form class="mbr-form mbr-jc-c mbr-flex mbr-m-auto mbr-column" method="post" target="_top" action-xhr="https://formoid.net/api/amp-form/push" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="TBlThOdq2CQGlU5do1hIAIYv+6QsAl1JRhXCcsokzOij4kJxWBKS3HYbcSyzXSw55SIF+NdQ9u0VYJsUVOSDIJ6PkI9YiN8/FOh9XytGpViGYLmsyaLPQ5rK+ksbLFtz">
+
+                            <div submit-success="">
+                                <template data-form-alert="" type="amp-mustache">Subscription successful!</template>
+                            </div>
+                            <div submit-error="">
+                                <template data-form-alert="" type="amp-mustache">Failed! {{error}}</template>
+                            </div>
+                            <div class="fieldset">
+                                <input type="email" name="form[data][0][1]" data-form-field="E-mail" placeholder="E-mail Address" required="" id="form[data][0][1]-header3-2m">
+                                <div class="mbr-section-btn align-center"><a class="btn btn-form btn-info display-7" href="https://mobirise.com">Get App</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features2 cid-r5a0FiKJoH" id="features2-2o">
+
+
+
+        <div class="container">
+
+            <div class="mbr-row">
+                <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center md-pb">
+                    <div class="card-wrapper mbr-flex mbr-column">
+                        <div class="card-img align-center mbr-pb-1">
+                            <div class="image-text mbr-fonts-style mbr-semibold display-1">100+</div>
+                        </div>
+                        <div class="card-box">
+
+                            <h4 class="card-subtitle mbr-pt-1 mbr-fonts-style mbr-gray mbr-regular display-7">Health programs</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center md-pb">
+                    <div class="card-wrapper mbr-flex mbr-column">
+                        <div class="card-img align-center mbr-pb-1">
+                            <div class="image-text mbr-fonts-style mbr-semibold display-1">50+</div>
+                        </div>
+                        <div class="card-box">
+
+                            <h4 class="card-subtitle mbr-pt-1 mbr-fonts-style mbr-gray mbr-regular display-7">
+                                <div><span>Individual parameters</span><br></div>
+                            </h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center">
+                    <div class="card-wrapper mbr-flex mbr-column">
+                        <div class="card-img align-center mbr-pb-1">
+                            <div class="image-text mbr-fonts-style mbr-semibold display-1">2500+</div>
+                        </div>
+                        <div class="card-box">
+
+                            <h4 class="card-subtitle mbr-pt-1 mbr-fonts-style mbr-gray mbr-regular display-7">Active users</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center last-child">
+                    <div class="card-wrapper mbr-flex mbr-column">
+                        <div class="card-img align-center mbr-pb-1">
+                            <div class="image-text mbr-fonts-style mbr-semibold display-1">10 X</div>
+                        </div>
+                        <div class="card-box">
+
+                            <h4 class="card-subtitle mbr-pt-1 mbr-fonts-style mbr-gray mbr-regular display-7">
+                                <div><span>Training efficiency</span><br></div>
+                            </h4>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header2 cid-r5dZKPLHIW" id="header2-3s">
+
+
+        <div class="container">
+            <div class="mbr-row mbr-black">
+                <div class="title-wrap mbr-col-md-12 mbr-col-sm-12 mbr-col-lg-8 align-left mbr-flex">
+                    <div class="title-block mbr-col-sm-12 mbr-col-md-12">
+                        <h1 class="mbr-section-title mbr-fonts-style mbr-semibold display-2">Activity Goals To Improve Health</h1>
+                        <h2 class="mbr-section-subtitle mbr-fonts-style mbr-regular mbr-pb-1 mbr-pt-3 display-7">Being active is important to our health, but how much or what kind of activity do you need? Health Tracker App worked with the World Health Organisation to develop two activity goals based on WHO's physical activity recommendations
+                            shown to impact health - Move Minutes and Heart Points</h2>
+
+
+                    </div>
+                </div>
+                <div class="image-wrap mbr-col-md-12 mbr-col-sm-12 mbr-col-lg-4 mbr-flex">
+                    <div class="image-block mbr-col-md-12 mbr-col-sm-12 mbr-mr-auto">
+                        <amp-img src="assets/images/015.jpg" layout="responsive" width="382.247191011236" height="486" alt="Mobirise" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div>
+                            </div>
+
+                        </amp-img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features3 cid-r5a0BdNnKa" id="features5-2n">
+
+
+
+        <div class="container">
+            <div class="title mbr-pb-4 align-center">
+                <h4 class="mbr-section-subtitle mbr-regular mbr-pt-1 mbr-fonts-style mbr-pb-3 display-2">Learn more about our application</h4>
+                <h3 class="mbr-section-title mbr-gray mbr-light mbr-pb-5 mbr-fonts-style display-5">Coaching you to a healthier and more active life</h3>
+            </div>
+            <div class="mbr-row mbr-jc-c">
+                <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 md-pb">
+                    <div class="card-wrapper mbr-column">
+                        <div class="card-img mbr-flex">
+                            <amp-img src="https://i.ibb.co/3sYpQLf/022.jpg" layout="responsive" width="390.3903903903904" height="260" alt="Mobirise" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
+                            <h3 class="card-title mbr-semibold mbr-pb-1 mbr-fonts-style display-7">HEART POINTS</h3>
+
+                            <p class="card-text mbr-fonts-style mbr-gray mbr-pt-1 pb-2 mbr-light display-4">Activities that get your heart pumping harder have tremendous health benefits for your heart and mind.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 md-pb">
+                    <div class="card-wrapper mbr-column">
+                        <div class="card-img mbr-flex">
+                            <amp-img src="https://i.ibb.co/tYN209V/mbr-7.png" layout="responsive" width="240.55718475073311" height="260" alt="Mobirise" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
+                            <h3 class="card-title mbr-semibold mbr-pb-1 mbr-fonts-style display-7">MOVE MINUTES</h3>
+
+                            <p class="card-text mbr-fonts-style mbr-gray mbr-pt-1 pb-2 mbr-light display-4">When it comes to your health, it’s important to move more and sit less. Earn Move Minutes for all your activity.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 last-child">
+                    <div class="card-wrapper mbr-column">
+                        <div class="card-img mbr-flex">
+                            <amp-img src="https://i.ibb.co/3sYpQLf/022.jpg" layout="responsive" width="173.33333333333331" height="260" alt="Mobirise" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
+                            <h3 class="card-title mbr-semibold mbr-pb-1 mbr-fonts-style  display-7">FITNESS ASSESSMENT</h3>
+
+                            <p class="card-text mbr-fonts-style mbr-gray mbr-pt-1 pb-2 mbr-light display-4">Your expert coach will take you through an assessment in order to create your personal plan for success.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="features3 cid-r5dYNLcI8k" id="features5-3r">
+
+
+
+        <div class="container">
+
+            <div class="mbr-row mbr-jc-c">
+                <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 md-pb">
+                    <div class="card-wrapper mbr-column">
+                        <div class="card-img mbr-flex">
+                            <amp-img src="https://i.ibb.co/vH6H9gP/mbr-5.jpg" layout="responsive" width="376.5" height="251" alt="Mobirise" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
+                            <h3 class="card-title mbr-semibold mbr-pb-1 mbr-fonts-style display-7">NUTRITIONAL SUCCESS</h3>
+
+                            <p class="card-text mbr-fonts-style mbr-gray mbr-pt-1 pb-2 mbr-light display-4">You'll get a personalized nutrition plan built specifically for your needs.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 md-pb">
+                    <div class="card-wrapper mbr-column">
+                        <div class="card-img mbr-flex">
+                            <amp-img src="https://i.ibb.co/NW9r597/mbr-12.png" layout="responsive" width="241.5372290292177" height="251" alt="Mobirise" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
+                            <h3 class="card-title mbr-semibold mbr-pb-1 mbr-fonts-style display-7">WORKOUTS</h3>
+
+                            <p class="card-text mbr-fonts-style mbr-gray mbr-pt-1 pb-2 mbr-light display-4">We build the workouts for you, you follow them and get results.&nbsp;App will take you through each expert-built workout, set by set.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card mbr-col-sm-12 mbr-col-md-8 mbr-col-lg-4 last-child">
+                    <div class="card-wrapper mbr-column">
+                        <div class="card-img mbr-flex">
+                            <amp-img src="https://i.ibb.co/GxthWDT/mbr-13.jpg" layout="responsive" width="376.5" height="251" alt="Mobirise" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
+                            <h3 class="card-title mbr-semibold mbr-pb-1 mbr-fonts-style  display-7">MOTIVATION&nbsp;</h3>
+
+                            <p class="card-text mbr-fonts-style mbr-gray mbr-pt-1 pb-2 mbr-light display-4">Your coach works with you on a daily basis to keep you motivated and on track. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery2 cid-r5a14qz7gc" id="gallery1-2u">
+
+
+        <div class="container">
+            <div class="title mbr-pb-4 align-center">
+                <h3 class="mbr-section-title mbr-regular mbr-fonts-style  mbr-pb-3 display-2">Look at our application</h3>
+
+            </div>
+            <div class="mbr-row mbr-px-2 gallery-wrap mbr-jc-c">
+                <div class="mbr-col-md-12 mbr-col-sm-12 gallery-row row-first flex-wrap mbr-col-lg-12 mbr-pb-4 mbr-flex">
+
+
+
+                    <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                        <div class="gallery-img-wrap">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" class="mobirise-loader image-without-link" src="assets/images/022.jpg" layout="responsive" height="269" width="403.9039039039039" alt="Mobirise">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+
+                        </div>
+                    </div>
+                    <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                        <div class="gallery-img-wrap">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" class="mobirise-loader image-without-link" src="assets/images/033.jpg" layout="responsive" height="269" width="403.9039039039039" alt="Mobirise">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+
+                        </div>
+                    </div>
+                    <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                        <div class="gallery-img-wrap">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" class="mobirise-loader image-without-link" src="assets/images/04.jpg" layout="responsive" height="269" width="403.9039039039039" alt="Mobirise">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mbr-col-md-12 mbr-col-sm-12 gallery-row row-second flex-wrap mbr-col-lg-12 mbr-pb-4 mbr-flex">
+
+
+
+                    <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                        <div class="gallery-img-wrap">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" class="mobirise-loader image-without-link" src="assets/images/05.jpg" layout="responsive" height="269" width="403.9039039039039" alt="Mobirise">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+
+                        </div>
+                    </div>
+                    <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                        <div class="gallery-img-wrap">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" class="mobirise-loader image-without-link" src="assets/images/background18.jpg" layout="responsive" height="269" width="403.5" alt="Mobirise">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+
+                        </div>
+                    </div>
+                    <div class="gallery-item mbr-col-sm-12 mbr-col-lg-4 mbr-col-md-8 md-pb mbr-px-2">
+                        <div class="gallery-img-wrap">
+                            <amp-img on="tap:lightbox1" role="button" tabindex="0" class="mobirise-loader image-without-link" src="assets/images/022.jpg" layout="responsive" height="269" width="403.9039039039039" alt="Mobirise">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <amp-image-lightbox id="lightbox1" layout="nodisplay">
+            <a class="control" data-close-button-aria-label="Close">
+            <span class="close"></span>
+        </a>
+        </amp-image-lightbox>
+    </section>
+
+   
+</html>
